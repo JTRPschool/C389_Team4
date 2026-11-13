@@ -1,0 +1,43 @@
+{
+ "classes": [
+  "person_left",
+  "person_right",
+  "wheeled_left",
+  "wheeled_right"
+ ],
+ "per_class": {
+  "person_left": {
+   "precision": 0.8192060963367429,
+   "recall": 0.7096774193548387,
+   "ap50": 0.7784025787332822,
+   "ap50_95": 0.6093118488791159
+  },
+  "person_right": {
+   "precision": 0.8517813090077822,
+   "recall": 0.7419354838709677,
+   "ap50": 0.7641106827869986,
+   "ap50_95": 0.6639235371646404
+  },
+  "wheeled_left": {
+   "precision": 0.9816384055068136,
+   "recall": 1.0,
+   "ap50": 0.995,
+   "ap50_95": 0.9111190476190476
+  },
+  "wheeled_right": {
+   "precision": 0.9794114841558125,
+   "recall": 1.0,
+   "ap50": 0.995,
+   "ap50_95": 0.8992190476190476
+  }
+ },
+ "confidence_threshold": 0.35,
+ "config": {
+  "model_variant": "yolo26n.pt",
+  "epochs": 100,
+  "image_size": 640,
+  "batch_size": 16,
+  "fliplr": 0.0
+ },
+ "used_sample_data": false
+}
